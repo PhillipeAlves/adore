@@ -1,0 +1,10 @@
+/* --- FOOTER --- */
+.footer {
+  width: 100vw;
+  text-align: center;
+  background-color: white;
+  color: var(--main-color);
+  position: fixed;
+  padding: 1rem;
+  bottom: 0;
+}

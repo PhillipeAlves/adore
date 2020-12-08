@@ -1,0 +1,26 @@
+/* --- FILTERS --- */
+ul.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ul.filters li {
+  list-style: none;
+  font-size: 1.5rem;
+  border-right: 1.5px solid var(--text-color);
+  padding: 0 1rem;
+  cursor: pointer;
+  color: var(--dark-text-color);
+}
+ul.filters li:hover {
+  color: var(--text-color);
+  transition: all 0.2s ease-in;
+}
+
+ul.filters li:last-child {
+  border-right: none;
+}
+
+ul.filters li.active {
+  color: var(--main-color);
+}

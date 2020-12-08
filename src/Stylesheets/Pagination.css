@@ -1,0 +1,28 @@
+/* --- PAGINATION --- */
+.pagination {
+  margin: 2rem 0 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* --- RESULTS PER PAGE --- */
+.results-per-page {
+  position: absolute;
+  top: 15.5%;
+  left: 5%;
+}
+.results-per-page select {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1.5px solid var(--secondary-color);
+  outline: none;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.results-per-page select:hover {
+  border: 1.5px solid var(--main-color);
+}
+.results-per-page p {
+  width: 2rem;
+}

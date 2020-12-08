@@ -1,0 +1,13 @@
+/* --- GO BACK --- */
+.go-back {
+  margin: 0 auto 3rem auto;
+  width: 50%;
+  border-bottom: 2px solid var(--secondary-color);
+}
+.go-back p {
+  cursor: pointer;
+}
+.go-back p:hover {
+  color: var(--main-color);
+  transition: all 0.2s ease-in;
+}

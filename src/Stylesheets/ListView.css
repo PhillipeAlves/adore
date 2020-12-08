@@ -1,0 +1,27 @@
+/* --- TABLE ---*/
+table.products-table {
+  min-width: 70%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+table.products-table tbody {
+  background: var(--secondary-color);
+}
+table.products-table tbody tr:hover {
+  background: var(--main-color);
+  color: white;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+table.products-table th {
+  text-align: left;
+  border-bottom: 2px solid white;
+  padding: 0.8rem;
+}
+table.products-table th:first-child {
+  width: 8%;
+}
+table.products-table th:last-child {
+  text-align: right;
+}
