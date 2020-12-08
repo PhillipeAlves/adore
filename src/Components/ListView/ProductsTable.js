@@ -1,6 +1,6 @@
 import { TableBody } from './TableBody';
 
-export const ProductsTable = ({ products }) => {
+export const ProductsTable = () => {
   return (
     <table className='products-table'>
       <thead>
@@ -10,7 +10,7 @@ export const ProductsTable = ({ products }) => {
           <th>Sku</th>
         </tr>
       </thead>
-      <TableBody products={products} />
+      <TableBody />
     </table>
   );
 };
