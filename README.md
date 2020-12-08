@@ -10,6 +10,14 @@ This is the implementation of a catalogue page using the **Adore beauty API**, w
 
 </br>
 
+> > ### `Live demo`
+
+</br>
+
+A live demo of this application is available [here](https://lit-basin-18854.herokuapp.com/).
+
+</br>
+
 ---
 
 </br>
