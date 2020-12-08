@@ -17,8 +17,10 @@ export const Provider = ({ children }) => {
 
   useEffect(() => {
     let storage = sessionStorage.getItem('storage');
-    storage = JSON.parse(storage);
-    setDetail(storage.detail);
+    if (storage) {
+      storage = JSON.parse(storage);
+      setDetail(storage.detail);
+    }
     setLoading(true);
     fetchData(setProducts, setCategories, setLoading);
   }, []);
