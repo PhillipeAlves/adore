@@ -20,7 +20,7 @@ This is the implementation of a catalogue page using the **Adore beauty API**, w
 
 </br>
 
-The application starts with the creation of a **Provider** using the fairly new **React Context API**. It allows the centralized management of state in multiple functional components. It was chosen to handle the application data flow over a state management library like **Redux** because of the size of the app.
+The application starts with the creation of a **Provider** using the fairly new **React Context API**. It allows the centralized management of state in multiple functional components. The Context API was chosen to handle the application data flow over a state management library like **Redux** because of the size of the app.
 
 Inside of the Provider the initial state was stablished using **useState**. Then **useEffect** was used to update the state with data fetched asynchronously from the API. UseEffect was also used to store data in localStorage and update it back to the state to create persistent data when needed.
 
