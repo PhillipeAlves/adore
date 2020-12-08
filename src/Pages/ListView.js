@@ -17,11 +17,11 @@ export const ListView = () => {
   }
 
   return (
-    <React.Fragment>
+    <>
       <ResultsPerPage />
       <Filters />
       <ProductsTable />
       <PaginationComponent />
-    </React.Fragment>
+    </>
   );
 };

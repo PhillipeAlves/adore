@@ -1,63 +1,53 @@
-# Front End Developer Task
+![Banner](/public/adore-banner.gif)
 
-Build a catalogue page using the Adore beauty API, with a list screen and single detail screen. There should be a header with the company logo and a footer with the developer name and current year.
+</br>
 
----
+> ## About
 
-> > > ## List View:
+</br>
 
-- Fetch list of product resources asynchronously from
-
-https://adorebeauty.com.au/api/ecommerce/catalog/products
-
-https://adorebeauty.com.au/api/ecommerce/catalog/categories
-
-You can view the available documentation at https://developer.bigcommerce.com/api-reference/store-management/catalog/products/getproducts
-
-https://developer.bigcommerce.com/api-reference/store-management/catalog/category/getcategories
-
-- Resources should be stored in state / redux / vuex
-
-- Show loading view during API fetch
-
-- Filters and categories name available are shown in the response -
-
-- Display home resource list as tabular data
-
-- When table row is clicked, single detailed resource page is shown
-
-- Show pagination with 100 (filtered) results per page
+This is the implementation of a catalogue page using the **Adore beauty API**, with a list screen and single detail screen. The application was built using Functional React. All the components are plain functions and use **React Hooks** to perform solutions.
 
 ---
 
-> > > ## Detail View
+</br>
 
-- Show single resource with title, sku, current_price, categories and image if applicable
+> ## Implementation
 
-- Provide link back to main list
+</br>
+
+> > ### `Data fetching and State`
+
+</br>
+
+The application starts with the creation of a **Provider** using the fairly new **React Context API**. It allows the centralized management of state in multiple functional components. It was chosen to handle the application data flow over a state management library like **Redux** because of the size of the app.
+
+Inside of the Provider the initial state was stablished using **useState**. Then **useEffect** was used to update the state with data fetched asynchronously from the API. UseEffect was also used to store data in localStorage and update it back to the state to create persistent data when needed.
+
+The state is then available in the **Context** created for the Provider. To access it in the components **useContext** was used in combination with the Context.
+
+</br>
+</br>
+
+> > ### `Structure`
+
+```
+
+    src
+      |
+      Components (logic)
+      |
+      Context (centralized state)
+      |
+      Helpers (code abstraction)
+      |
+      Pages (render)
+      |
+      Stylesheets (css)
+
+
+```
+
+</br>
 
 ---
-
-> > > ## Notes
-
-- 3rd party libraries can be used for fetching api data
-
-- Can use CSS library like tailwindcss / bulma / bootstrap / dev’s choice
-
-- Bonus points for:
-
-- Clean and useful styling
-
-- Clean code
-
-- Good state management
-
-- Building own filtering
-
-- Persistence of state between pages
-
----
-
-> > > ## Constraints
-
-- Please spend 3ish hours on the task only. We do not wish to occupy your time any further. We don’t expect you to complete all of it.

@@ -1,4 +1,4 @@
-import TableBody from './TableBody';
+import { TableBody } from './TableBody';
 
 export const ProductsTable = ({ products }) => {
   return (

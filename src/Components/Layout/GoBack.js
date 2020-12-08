@@ -1,12 +1,11 @@
-import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import '../../Stylesheets/GoBack.css';
 
-const GoBack = ({ history }) => {
+export const GoBack = () => {
+  const history = useHistory();
   return (
     <div className='go-back'>
-      <p onClick={history.goBack}>&lt; Back to list</p>
+      <p onClick={() => history.goBack()}>&lt; Back to list</p>
     </div>
   );
 };
-
-export default withRouter(GoBack);

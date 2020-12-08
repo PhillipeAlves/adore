@@ -1,5 +1,5 @@
 import React, { useState, createContext, useEffect } from 'react';
-import { fetchData } from '../Helpers';
+import { fetchDataByPath } from '../Helpers';
 
 export const Context = createContext();
 
@@ -14,20 +14,30 @@ export const Provider = ({ children }) => {
   // = FILTERING
   const [filter, setFilter] = useState('');
   const [detail, setDetail] = useState('');
-
+  // = FETCH DATA
   useEffect(() => {
-    let storage = sessionStorage.getItem('storage');
+    (async () => {
+      setLoading(true);
+      const [_products, _categories] = await Promise.all([
+        fetchDataByPath('products'),
+        fetchDataByPath('categories'),
+      ]);
+      setProducts(_products);
+      setCategories(_categories);
+      setLoading(false);
+    })();
+  }, []);
+  // = PERSISTENT DATA
+  useEffect(() => {
+    let storage = localStorage.getItem('storage');
     if (storage) {
       storage = JSON.parse(storage);
       setDetail(storage.detail);
     }
-    setLoading(true);
-    fetchData(setProducts, setCategories, setLoading);
   }, []);
-
   useEffect(() => {
-    sessionStorage.setItem('storage', JSON.stringify({ detail }));
-  });
+    localStorage.setItem('storage', JSON.stringify({ detail }));
+  }, [detail]);
 
   return (
     <Context.Provider

@@ -17,10 +17,10 @@ table.products-table tbody tr:hover {
 table.products-table th {
   text-align: left;
   border-bottom: 2px solid white;
-  padding: 0.8rem;
+  padding: 0.7rem;
 }
 table.products-table th:first-child {
-  width: 8%;
+  width: 6%;
 }
 table.products-table th:last-child {
   text-align: right;

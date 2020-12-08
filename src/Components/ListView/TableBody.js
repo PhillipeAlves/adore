@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Context } from '../../Context/Context';
 import { clearTitle } from '../../Helpers';
-import { withRouter } from 'react-router-dom';
 import { Page } from '../../Components';
 
-const TableBody = ({ history }) => {
+export const TableBody = () => {
   const { setDetail } = useContext(Context);
   const { currentProducts: products } = Page();
+  const history = useHistory();
 
   const getProduct = (product) => {
     setDetail(product);
@@ -26,5 +27,3 @@ const TableBody = ({ history }) => {
     );
   });
 };
-
-export default withRouter(TableBody);

@@ -2,6 +2,7 @@ export * from './Layout/Header';
 export * from './Layout/Footer';
 export * from './Layout/Filters';
 export * from './Layout/Loading';
+export * from './Layout/GoBack';
 export * from './Pagination/Page';
 export * from './Pagination/PaginationComponent';
 export * from './Pagination/ResultsPerPage';

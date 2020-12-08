@@ -1,7 +1,7 @@
 import React from 'react';
 import { Page } from '..';
-import '../../Stylesheets/Pagination.css';
 import Pagination from '@material-ui/lab/Pagination';
+import '../../Stylesheets/Pagination.css';
 
 export const PaginationComponent = () => {
   const { paginate, currentPage, pageNumbers } = Page();

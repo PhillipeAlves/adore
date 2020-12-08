@@ -5,12 +5,7 @@ export const clearTitle = (string, sku) => {
 };
 
 export const getCategories = (categories) => {
-  return categories
-    .reduce((acc, categorie) => {
-      acc.push(`Category ${categorie}`);
-      return acc;
-    }, [])
-    .join(', ');
+  return categories.map((category) => `Category ${category}`).join(', ');
 };
 
 export const isActive = (state, value) => {
