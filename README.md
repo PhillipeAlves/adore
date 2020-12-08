@@ -27,7 +27,6 @@ Inside of the Provider the initial state was stablished using **useState**. Then
 The state is then available throughout the application in the **Context** created for the Provider. Inside of the components **useContext** was used in combination with the Context to access and update the state dynamically.
 
 </br>
-</br>
 
 > > ### `Structure`
 
@@ -48,6 +47,48 @@ The state is then available throughout the application in the **Context** create
       Stylesheets (css)
 
 
+```
+
+</br>
+
+---
+
+</br>
+
+---
+
+</br>
+
+> ## Run locally
+
+</br>
+
+> > ### `1` - Clone the project to your local directory
+
+</br>
+
+```
+$ git clone https://github.com/PhillipeAlves/adore.git cd adore
+```
+
+</br>
+
+> > ### `2` - Install the dependencies
+
+</br>
+
+```
+$ npm install
+```
+
+</br>
+
+> > ### `3` - Run
+
+</br>
+
+```
+$ npm start
 ```
 
 </br>
