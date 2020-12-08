@@ -8,7 +8,7 @@
 /* --- RESULTS PER PAGE --- */
 .results-per-page {
   position: absolute;
-  top: 15.5%;
+  top: 100px;
   left: 5%;
 }
 .results-per-page select {
@@ -24,5 +24,17 @@
   border: 1.5px solid var(--main-color);
 }
 .results-per-page p {
-  width: 2rem;
+  display: none;
+}
+
+@media screen and (min-width: 1100px) {
+  .results-per-page {
+    position: absolute;
+    top: 173px;
+    left: 5%;
+  }
+  .results-per-page p {
+    display: block;
+    width: 2rem;
+  }
 }
