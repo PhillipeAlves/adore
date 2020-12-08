@@ -8,6 +8,8 @@
 
 This is the implementation of a catalogue page using the **Adore beauty API**, with a list screen and single detail screen. The application was built using Functional React. All the components are plain functions and use **React Hooks** to perform solutions.
 
+</br>
+
 ---
 
 </br>
