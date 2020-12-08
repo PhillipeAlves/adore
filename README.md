@@ -55,10 +55,6 @@ The state is then available throughout the application in the **Context** create
 
 </br>
 
----
-
-</br>
-
 > ## Run locally
 
 </br>
