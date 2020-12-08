@@ -14,6 +14,7 @@ export const Provider = ({ children }) => {
   // = FILTERING
   const [filter, setFilter] = useState('');
   const [detail, setDetail] = useState('');
+
   // = FETCH DATA
   useEffect(() => {
     (async () => {
@@ -27,6 +28,7 @@ export const Provider = ({ children }) => {
       setLoading(false);
     })();
   }, []);
+
   // = PERSISTENT DATA
   useEffect(() => {
     let storage = localStorage.getItem('storage');
