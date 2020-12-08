@@ -24,7 +24,7 @@ The application starts with the creation of a **Provider** using the fairly new 
 
 Inside of the Provider the initial state was stablished using **useState**. Then **useEffect** was used to update the state with data fetched asynchronously from the API. UseEffect was also used to store data in localStorage and update it back to the state to create persistent data when needed.
 
-The state is then available in the **Context** created for the Provider. To access it in the components **useContext** was used in combination with the Context.
+The state is then available throughout the application in the **Context** created for the Provider. Inside of the components **useContext** was used in combination with the Context to access and update the state dynamically.
 
 </br>
 </br>
