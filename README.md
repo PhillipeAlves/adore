@@ -31,6 +31,8 @@ The state is then available throughout the application in the **Context** create
 
 > > ### `Structure`
 
+</br>
+
 ```
 
     src
